@@ -48,7 +48,3 @@ $ git remote - will check whether the local and remote repo has been successfull
 $ git push origin <branchName> master - this will push the changes made in our git repo to the GitHub repo
 
 
-Personal Token:
-
-
-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
