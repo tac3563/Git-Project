@@ -7,8 +7,11 @@
 body {
     font-family: 'Roboto', sans-serif;
     color: #343a40;
-    width: 80%;
     margin: 0 auto;
+}
+
+header, main, footer {
+    width: 100%;
 }
 
 
@@ -26,3 +29,25 @@ h2 {
 h1, h2 {
     text-align: center;
 }
+
+.nav-container {
+    width: 100%;
+}
+
+
+.nav-bar {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+    background-color: #ffa8a8;
+    margin-bottom: 20px;
+}
+
+.nav-item {
+    margin: 0px 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
