@@ -1,0 +1,54 @@
+What is Git?
+
+Git is a Version Control System for managing our files. We can create a local folder to save our files on our own machine.
+
+Git allows us to save snapshots of our files 
+
+We can then push them to a remote folder which other devs can access on GitHub.
+
+What are the key commands in Git?
+
+$ git init - creates a local git repo
+$ git add <fileName> - adds files to the local git repo
+$ git add * - adds all files in the folder to the local git repo
+$ git add *.html - adds just the html files, you can use other file types as well
+$ git status - prints the status of the files in the staging area
+$ git rm --cached <file> - removes the files from the staging area
+$ git commit -m '<comment' - commits any changes in the files to the git repo, always add a comment to describe the changes you have made
+$ git branch <name> - creates a branch seperate to the main branch
+$ git checkout <branchName> - switches which branch you are working on
+$ git merge <branchName> - merges the second branch to the main branch as long as you are currently on the main branch
+$ git remote - prints the remote's name
+$ git push <remoteName> <branchName> - pushes the branch of the local repo to the remote repo on GitHub
+ 
+The Git/GitHub Process:
+
+Pulling from a remote repo -
+
+Set default username and email
+Create remote repo on GiHub
+Clone the remote repo to your local PC using the HTTPS address on GitHub and pasting to the terminal - this creates a local copy of the remote repo on your computer
+Create a local git repo
+Add files to the local repo
+Check status to check the files that have been modified
+Commit any changes to the files into the local repo - always include a message containing a brief description of what you have changed
+Push the modified files from the local repo on Git to the remote repo on GitHub
+
+Pushing from a local repo to remote repo -
+
+Turn a directory on our computer into a local Git repo by navigating to file and typing $ git init
+$ git status - to check the files which are inside the directory
+$ git add <fileName> -  to add the files to be tracked in the Git repo
+$ git status - to check that the files have been successfully tracked
+$ git commit -m '<comment' - to commit the changes to Git with a comment describing what was changed to the file
+Attach the git repo to a remote repo by creating a GitHub repo 
+Copy the HTTPS link when GitHub repo is created
+Paste the link into terminal with command $ git remote add origin <HTTPS address> 
+$ git remote - will check whether the local and remote repo has been successfully connected, will print "origin" if successful
+$ git push origin <branchName> master - this will push the changes made in our git repo to the GitHub repo
+
+
+Personal Token:
+
+
+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
