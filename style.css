@@ -1,4 +1,7 @@
-* {
+
+/* General Styles */
+
+*{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -13,6 +16,45 @@ body {
 header, main, footer {
     width: 100%;
 }
+
+
+/* Nav Bar */
+
+.nav-container {
+    width: 100%;
+}
+
+
+.nav-bar {
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+    background-color: #ffa8a8;
+    margin-bottom: 20px;
+}
+
+.nav-item {
+    margin: 0px 20px;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #343a40;
+}
+
+.nav-item:hover {
+    font-weight: 800;
+}
+
+.nav-item:active {
+    font-weight: 400;
+}
+
+.nav-item:visited {
+    font-weight: 800;
+}
+
+/* Header */
 
 
 h1 {
@@ -30,24 +72,8 @@ h1, h2 {
     text-align: center;
 }
 
-.nav-container {
-    width: 100%;
+.banner-image {
+    width: 80%;
+    display: block;
+    margin: 30px auto;
 }
-
-
-.nav-bar {
-    list-style: none;
-    text-decoration: none;
-    display: flex;
-    justify-content: end;
-    padding: 10px;
-    background-color: #ffa8a8;
-    margin-bottom: 20px;
-}
-
-.nav-item {
-    margin: 0px 20px;
-    font-size: 20px;
-    font-weight: 600;
-}
-
