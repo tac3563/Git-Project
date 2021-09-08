@@ -17,7 +17,7 @@ header, article, footer {
     width: 100%;
 }
 
-main p {
+article p {
     width: 80%;
     margin: 0 auto;
 
