@@ -13,12 +13,12 @@ body {
     margin: 0 auto;
 }
 
-header, article, footer {
+header, section, footer {
     width: 100%;
 }
 
-article p {
-    width: 80%;
+section p {
+    width: 70%;
     margin: 0 auto;
 
 }
@@ -80,14 +80,14 @@ h1, h3 {
 }
 
 .banner-image {
-    width: 80%;
+    width: 70%;
     display: block;
     margin: 30px auto;
     margin-bottom: 100px;
     border-radius: 20px;
 }
 
-/* Article Section 1*/
+/*  Section 1 */
 
 .section-divider {
     width: 100%;
@@ -102,7 +102,7 @@ h1, h3 {
     margin-bottom: 30px;
 }
 
-article p {
+section p {
     margin-bottom: 20px;
     line-height: 1.8;
     letter-spacing: 1px;
@@ -111,8 +111,9 @@ article p {
 
 .card-container {
     display: flex;
-    justify-content: space-around;
-    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 100%;
     margin: 50px auto;
     height: auto;
     margin-bottom: 100px;
@@ -121,19 +122,22 @@ article p {
 .card1, .card2 {
     background-color: #f8f9fa;
     width: 40%;
+    max-width: 800px;
+    min-width: 200px;
     border: solid black 2px;
     border-radius: 20px;
     display: flex;
+    flex: 1 0 400px;
     justify-content: center;
     flex-wrap: wrap;
     box-shadow: 0px 20px 20px 10px rgba(0,0,0 , 0.1);
+    margin-bottom: 30px;
 }
 
 .card1-title, .card2-title {
     display: block;
     padding: 10px;
-    height: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 
 }
 
@@ -164,9 +168,33 @@ li {
     margin-bottom: 30px;
 }
 
-/* Article Section 2 */
+/* Section 2 */
 
 .section2-header {
     text-align: center;
     font-size: 38px;
+}
+
+.section2-subheading {
+    text-align: center;
+    margin-bottom: 500px;
+    font-size: 28px;
+}
+
+
+
+
+
+
+/* Section 3 */
+
+.section3-header {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 38px;
+}
+
+.section3-subheading {
+    font-size: 28px;
+    margin-bottom: 30px;
 }
