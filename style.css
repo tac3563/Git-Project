@@ -11,6 +11,7 @@ body {
     font-family: 'Roboto', sans-serif;
     color: #343a40;
     margin: 0 auto;
+    background-color: #f8f9fa;
 }
 
 header, section, footer {
@@ -32,20 +33,19 @@ section p {
 .nav-bar {
     list-style: none;
     display: flex;
-    justify-content: end;
-    padding: 10px;
-    /* background-color: #ffa8a8; */
-    margin-bottom: 40px;
+    justify-content: space-evenly;
+    margin-bottom: 4em;
     border-radius: 4px;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    padding-top: 1em;
+    
 }
 
 .nav-item {
-    margin: 10px 20px;
-    font-size: 24px;
+    font-size: 2rem;
     font-weight: 400;
     text-decoration: none;
     color: #ffa8a8;
-    padding: 10px;
 }
 
 .nav-item:hover {
@@ -60,17 +60,61 @@ section p {
     font-weight: 800;
 }
 
+.toggle-icon {
+    color: #ffa8a8;
+    display: none;
+   
+
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-bar,
+    .nav-container {
+        flex-direction: column;
+    }
+
+    .nav-bar:active {
+        left: 0;
+        
+    }
+    .nav-item  {
+        display: none;
+        margin-top: 2rem;
+        width: 100%;
+        text-align: center;
+        
+    }
+
+    .nav-item ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .nav-item li {
+        text-align: center;
+    }
+    .toggle-icon {
+        align-self: flex-start;
+        display: inline-block;
+        position: absolute;
+        top: .75rem;
+        left: 1rem;
+        cursor: pointer;
+    }
+}
+
+
 /* Header */
 
 
 h1 {
-    margin-bottom: 16px;
-    font-size: 64px;
+    margin-bottom: 0.5em;
+    font-size: 4rem;
 
 }
 
 h3 {
-    font-size: 28px;
+    font-size: 2rem;
     color:  #495057;
     font-weight: 500;
 }
@@ -81,6 +125,8 @@ h1, h3 {
 
 .banner-image {
     width: 70%;
+    max-width: 100%;
+    height: auto;
     display: block;
     margin: 30px auto;
     margin-bottom: 100px;
@@ -122,8 +168,8 @@ section p {
 .card1, .card2 {
     background-color: #f8f9fa;
     width: 40%;
-    max-width: 800px;
-    min-width: 200px;
+    max-width: 600px;
+    min-width: 150px;
     border: solid black 2px;
     border-radius: 20px;
     display: flex;

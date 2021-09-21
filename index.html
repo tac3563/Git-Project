@@ -6,23 +6,39 @@
     <title>Git and GitHub Test Project</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
+
+        <!-- Nav Bar -->
+
     <nav class="nav-container">
-        <ul class="nav-bar">
-            <li><a class="nav-item" href="#">Home</a></li>
-            <li><a class="nav-item" href="#">About</a></li>
-            <li><a class="nav-item" href="#">Blog</a></li>
-            <li><a class="nav-item" href="#">Get in Touch</a></li>
+        <div class="toggle-icon">
+            <ion-icon class="nav-toggle" name="menu"></ion-icon>
+        </div>
+        
+        <ul class="nav-bar">  
+            <li><a class="nav-item" href="#">HOME</a></li>
+            <li><a class="nav-item" href="#">HTML</a></li>
+            <li><a class="nav-item" href="#">CSS/SCSS</a></li>
+            <li><a class="nav-item" href="#">JS</a></li>
+            <li><a class="nav-item" href="#">VCS</a></li>      
         </ul>
     </nav>
+
+        <!-- Header -->
+
     <header>
-        <h1>Version Control Systems (VCS) </h1>
+        <h1>VERSION CONTROL SYSTEMS (VCS) </h1>
         <h3>Using a VCS is a crucial tool for a modern developer</h3>
         <img class="banner-image" src="/assets/github.jpg" alt="Screenshot of GitHub Repository">
     </header>
+
+       <!-- Section 1 -->
+
     <section class="section1">
         <div class="section-divider"></div>
         <h2 class="section1-header">What is a Version Control System?</h2>
@@ -49,6 +65,10 @@
                 </ul>
             </div>
         </div>
+    </section>
+
+        <!-- Section 2 -->
+
     <section>
 
         <h2 class="section2-header">How Does Git & GitHub Work?</h2>
@@ -59,15 +79,19 @@
 
     </section>
 
+        <!-- Section 3 -->
+
     <section>
+
         <h2 class="section3-header">Git Workflow: Gitflow</h2>
         <h3 class="section3-subheading">Standardised practices for using Git Workflows</h3>
         <p>Now that we know what Git & GitHub are, how they work, and why they are so useful. We now need to look at the best practices for using Git & GitHub within our own workflows. Although many of the fundamentals will remain the same, there are processes such as what to name our branches, the roles these branch fulfill, and how and when the branches should be merged which may differ between developers. </p>
         <p>As with the use of linters and formatters in our code, having a clearly defined and standardised process within a team of developers helps to prevent conflicts, allows us to more easily bugfix and identify issues within the worfklow, and generally improves the efficiency of collaboration.</p>
+    
     </section>
         
 
-    </section>
+    
     <footer>
 
     </footer>
