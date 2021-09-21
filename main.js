@@ -1,3 +1,6 @@
+
+//Hamburger Toggle Script //
+
 const hamburger = document.querySelector(".nav-toggle");
 const navMenu = document.querySelector(".nav-menu");
 
